@@ -25,4 +25,5 @@ ADD config.yml /opt
 COPY --from=builder /opt/registry-ui /opt/
 
 USER nobody
+EXPOSE 8000
 ENTRYPOINT ["/opt/registry-ui"]
